@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Макет 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="top-container">
+        <header class="header-container">
+            <div class="work-area">
+                <div class="company-container">
+                    <img src="./image3/stonks.jpeg" alt="Company Logo" class="company-logo">
+                    <div>
+                        <span class="company-name">Назва</span>
+                        <span class="company-name">Компанії</span>
+                        <span class="company-subtitle">Найкраща компанія</span>
+                    </div>
+                </div>
+                <div class="numbers-container">
+                    <a href="tel:+74997777777" class="phone-number">+7(499) 777-77-77</a>
+                    <br>
+                    <a href="tel:+74997777777" class="phone-number">+7(499) 777-77-77</a>
+                    <span class="feedback">Зворотній зв'язок</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Modal Window -->
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">
+                <img src="./image3/icon_close.svg" alt="Close" class="close-icon">
+            </span>
+            <h2>Зворотній зв'язок</h2>
+            <form id="feedback-form" class="feedback-form">
+                <label for="name" class="form-label">Ваше ім'я *</label>
+                <div class="input-container">
+                    <input type="text" id="name" name="name" minlength="3" required data-message="Ім'я має бути 3 і більше символів">
+                    <span class="required-field-message">Ім'я має бути 3 і більше символів</span>
+                </div>
+                
+                <label for="phone" class="form-label">Телефон *</label>
+                <div class="input-container">
+                    <input type="tel" id="phone" name="phone" pattern="\d{10}" required data-message="Номер телефону має містити 10 цифр">
+                    <span class="required-field-message">Номер телефону має містити 10 цифр</span>
+                </div>
+                
+                <label for="email" class="form-label">Email *</label>
+                <div class="input-container">
+                    <input type="email" id="email" name="email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" required data-message="Email повинен містити @">
+                    <span class="required-field-message">Email повинен містити @</span>
+                </div>
+                
+                <label for="message" class="form-label">Повідомлення</label>
+                <div class="input-container">
+                    <textarea id="message" name="message" class="textarea-class" required data-message="Поле обов'язкове для заповнення"></textarea>
+                    <span class="required-field-message">Поле обов'язкове для заповнення</span>
+                </div>
+                
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="top-menu-container">
+        <div class="menu-container">
+            <div class="menu-work-area">
+                <ul class="menu-list">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка і оплата</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-picture-container">
+        <div class="picture-content">
+            <div class="arrow left-arrow">
+                <img src="./image3/left.jpg" alt="Left Arrow">
+            </div>
+            <img id="slideshow" src="./image3/slide1.jpg" alt="Slider">
+            <div class="arrow right-arrow">
+                <img src="./image3/right.jpg" alt="Right Arrow">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="top-story-container">
+        <div class="story-container">
+            <div class="story-work-area">
+                <ul class="horizontal-menu">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><p> Побутова техніка</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="top-news-container">
+        <div class="news-container">
+            <div class="news-work-area">
+                <div class="sidebar">
+                    <div class="news-list-container">
+                        <div class="category">
+                            <p>Автомобілі</p>
+                            <ul class="subcategory">
+                                <li><a href="#">Легкові автомобілі</a></li>
+                                <li><a href="#">Вантажні автомобілі</a></li>
+                                <li><a href="#">Електромобілі</a></li>
+                            </ul>
+                        </div>
+                        <div class="category">
+                            <p>Побутова техніка</p>
+                            <ul class="subcategory">
+                                <li><a href="#">Мікрохвильові печі</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомийні машини</a></li>
+                                <li><a href="#">Чайники</a></li>
+                            </ul>
+                        </div>
+                        <div class="category">
+                            <p>Мобільна техніка</p>
+                            <ul class="subcategory">
+                                <li><a href="#">Смартфони</a></li>
+                                <li><a href="#">Планшети</a></li>
+                                <li><a href="#">Ноутбуки</a></li>
+                            </ul>
+                        </div>
+                        <div class="category">
+                            <p>Комп'ютери</p>
+                            <ul class="subcategory">
+                                <li><a href="#">Настільні комп'ютери</a></li>
+                                <li><a href="#">Ноутбуки</a></li>
+                                <li><a href="#">Монітори</a></li>
+                            </ul>
+                        </div>
+                        <div class="category">
+                            <p>Одяг</p>
+                            <ul class="subcategory">
+                                <li><a href="#">Жіночий одяг</a></li>
+                                <li><a href="#">Чоловічий одяг</a></li>
+                                <li><a href="#">Дитячий одяг</a></li>
+                            </ul>
+                        </div>
+                        <div class="category">
+                            <p>Нерухомість</p>
+                            <ul class="subcategory">
+                                <li><a href="#">Квартири</a></li>
+                                <li><a href="#">Будинки</a></li>
+                                <li><a href="#">Земельні ділянки</a></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                    
+                    
+                    
+                    <div class="image-container">
+                        <img src="./image3/logo_price-list.jpg" alt="logo_price" class="fixed-image">
+                        <p>Прайс-лист</p>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-item">
+                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                        <span>Найкращий чайник, який треба придбати!</span>
+                            <div class="pokypka">
+                                <p>1 900 грн.</p>
+                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                            </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                        <span>Найкращий чайник, який треба придбати!</span>
+                            <div class="pokypka">
+                                <p>1 900 грн.</p>
+                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                            </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                        <span>Найкращий чайник, який треба придбати!</span>
+                            <div class="pokypka">
+                                <p>1 900 грн.</p>
+                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                            </div>
+                    </div>
+                    <div class="product-item2">
+                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                        <span>Найкращий чайник, який треба придбати!</span>
+                            <div class="pokypka">
+                                <p>1 900 грн.</p>
+                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                            </div>
+                    </div>
+                    <div class="product-item2">
+                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                        <span>Найкращий чайник, який треба придбати!</span>
+                            <div class="pokypka">
+                                <p>1 900 грн.</p>
+                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="top-texto-container">
+        <div class="texto-container">
+            <div class="texto-work-area">
+                <div class="mini-texto">
+                    <div class="pagination-container">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                    </div>
+                    <div class="content-container">
+                        <div class="column">
+                            <p>Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у розробці більш як 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників, що працюють у двох офісах у Москві та Зеленограді. Характерні для цього жанру мотиви: нерозділеного кохання, догляду молодості, згасання душі.</p>
+                        </div>
+                        <div class="column">
+                            <p>Одним із основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами за більш ніж 11 000 пошуковими запитами. При цьому в роботі основний акцент ми робимо на якості робіт, а також застосовуємо власні унікальні розробки в галузі SEO просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного спеціаліста, які переважно працюють у нашому московському офісі.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer-container">
+            <div class="footero-container">
+                <div class="footer-work-area">
+                    <div class="copyright-container">
+                        <p>© 2012–2013 ЗАТ «Компанія»</p>
+                        <p>info@name.ua</p>
+                    </div>
+                    <div class="links-container">
+                        <ul class="footer-links">
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Доставка і оплата</a></li>
+                            <li><a href="#">Прайс-лист</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="company-logo-container">
+                        <img src="./image3/logo_companydev.svg" alt="Company Logo" class="company-logo-small">
+                    </div>
+                    <div class="development-container">
+                        <p><a href="#">Розробка сайту</a> - 
+                        <br>
+                            компанія «Піксель Плюс»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
