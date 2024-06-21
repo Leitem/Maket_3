@@ -1,0 +1,202 @@
+
+/* Modal window */
+.feedback {
+    font-weight: bold;
+    font-size: 20px;
+    color: #777777;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hide the default modal window */
+    position: fixed; /* Fixed positioning */
+    z-index: 2; /* Place on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Add scrolling if needed */
+    background-color: rgba(0,0,0,0.4); /* Black background with transparency */
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+.modal-content {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    height: 560px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow */
+    position: relative; /* Relative positioning for close-btn */
+    text-align: center; /* Center the text inside the modal window */
+    opacity: 0; /* Initially hide the modal window */
+    animation: fade-in 0.5s forwards; /* Appearance animation */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    color: #aaaaaa;
+    float: right;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    cursor: pointer;
+    background-color: #777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+}
+
+.close-btn img.close-icon {
+    width: 20px; 
+    height: 20px;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #535353;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    background-color: #706f6f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.form-label {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    color: #535353;
+}
+
+input, textarea {
+    width: 340px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #c3c3c3; /* Frame color */
+}
+
+input {
+    border: 1px solid #c3c3c3; /* Default frame color */
+    outline: none; /* Remove outer frame */
+}
+
+
+input:focus {
+    border-color: #7e7e7e; /* Green color of the frame when focused */
+}
+
+textarea {
+    border: 1px solid #c3c3c3; /* Default frame color */
+    outline: none; /* Remove outer frame */
+}
+
+textarea:focus {
+    border-color: #7e7e7e; /* Green color of the frame when focused */
+}
+
+.textarea-class {
+    height: 130px;
+    resize: none;
+}
+
+button {
+    width: max-content;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #777777;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #888888;
+}
+
+.required-field-message {
+    font-size: 12px;
+    color: red;
+    display: none; /* Initially hide the message */
+}
+
+.required-field-empty {
+    box-shadow: inset 0 0 5px red; /* Red inner shadow */
+}
+
+.required-field-empty + .required-field-message {
+    display: block; /* Show a message when the field is empty */
+}
+
+.input-container {
+    position: relative;
+    width: 350px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: calc(100% - 20px); /* We take into account the indents */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #c3c3c3;
+    margin-top: 5px;
+    outline: none;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: #7e7e7e;
+}
+
+.input-container .required-field-message {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 20px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    display: none;
+    white-space: nowrap; /* Prevent text wrapping */
+    padding: 0 5px; /* Extra padding */
+    user-select: none;
+}
+
+.input-container input.required-field-empty,
+.input-container textarea.required-field-empty {
+    box-shadow: inset 0 0 5px red;
+}
+
+.input-container input.required-field-empty + .required-field-message,
+.input-container textarea.required-field-empty + .required-field-message {
+    display: block;
+}

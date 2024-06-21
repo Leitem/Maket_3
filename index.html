@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Макет 3</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="modal__window.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="story.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="footer.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <script src="js/index.js"></script>
 </head>
 <body>
+    <script src="js/index.js"></script>
     <div class="top-container">
         <header class="header-container">
             <div class="work-area">
@@ -67,185 +74,182 @@
             </form>
         </div>
     </div>
-    
 
-    <div class="top-menu-container">
+    <nav class="top-menu-container">
         <div class="menu-container">
-            <div class="menu-work-area">
-                <ul class="menu-list">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Доставка і оплата</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </div>
+            <ul class="menu-list">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка і оплата</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
     <div class="top-picture-container">
         <div class="picture-content">
             <div class="arrow left-arrow">
                 <img src="./image3/left.jpg" alt="Left Arrow">
             </div>
-            <img id="slideshow" src="./image3/slide1.jpg" alt="Slider">
+            <div class="slideshow-wrapper">
+                <div class="slideshow">
+                    <img src="./image3/slide2.jpg" alt="Slider"> <!-- Duplicate last slide -->
+                    <img src="./image3/slide1.jpg" alt="Slider">
+                    <img src="./image3/slide2.jpg" alt="Slider">
+                    <!-- Add more slides if needed -->
+                    <img src="./image3/slide1.jpg" alt="Slider"> <!-- Duplicate first slide -->
+                </div>
+            </div>
             <div class="arrow right-arrow">
                 <img src="./image3/right.jpg" alt="Right Arrow">
             </div>
         </div>
     </div>
+
     
 
     <div class="top-story-container">
         <div class="story-container">
-            <div class="story-work-area">
-                <ul class="horizontal-menu">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><p> Побутова техніка</p></li>
-                </ul>
-            </div>
+            <ul class="horizontal-menu">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><p> Побутова техніка</p></li>
+            </ul>            
         </div>
     </div>
     
-    
     <div class="top-news-container">
         <div class="news-container">
-            <div class="news-work-area">
-                <div class="sidebar">
-                    <div class="news-list-container">
-                        <div class="category">
-                            <p>Автомобілі</p>
-                            <ul class="subcategory">
-                                <li><a href="#">Легкові автомобілі</a></li>
-                                <li><a href="#">Вантажні автомобілі</a></li>
-                                <li><a href="#">Електромобілі</a></li>
-                            </ul>
-                        </div>
-                        <div class="category">
-                            <p>Побутова техніка</p>
-                            <ul class="subcategory">
-                                <li><a href="#">Мікрохвильові печі</a></li>
-                                <li><a href="#">Холодильники</a></li>
-                                <li><a href="#">Посудомийні машини</a></li>
-                                <li><a href="#">Чайники</a></li>
-                            </ul>
-                        </div>
-                        <div class="category">
-                            <p>Мобільна техніка</p>
-                            <ul class="subcategory">
-                                <li><a href="#">Смартфони</a></li>
-                                <li><a href="#">Планшети</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                            </ul>
-                        </div>
-                        <div class="category">
-                            <p>Комп'ютери</p>
-                            <ul class="subcategory">
-                                <li><a href="#">Настільні комп'ютери</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                                <li><a href="#">Монітори</a></li>
-                            </ul>
-                        </div>
-                        <div class="category">
-                            <p>Одяг</p>
-                            <ul class="subcategory">
-                                <li><a href="#">Жіночий одяг</a></li>
-                                <li><a href="#">Чоловічий одяг</a></li>
-                                <li><a href="#">Дитячий одяг</a></li>
-                            </ul>
-                        </div>
-                        <div class="category">
-                            <p>Нерухомість</p>
-                            <ul class="subcategory">
-                                <li><a href="#">Квартири</a></li>
-                                <li><a href="#">Будинки</a></li>
-                                <li><a href="#">Земельні ділянки</a></li>
-                            </ul>
-                        </div>
-                    </div>                    
-                    
-                    
-                    
-                    <div class="image-container">
-                        <img src="./image3/logo_price-list.jpg" alt="logo_price" class="fixed-image">
-                        <p>Прайс-лист</p>
+            <div class="sidebar">
+                <div class="news-list-container">
+                    <div class="category">
+                        <p>Автомобілі</p>
+                        <ul class="subcategory">
+                            <li><a href="#">Легкові автомобілі</a></li>
+                            <li><a href="#">Вантажні автомобілі</a></li>
+                            <li><a href="#">Електромобілі</a></li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="product-container">
-                    <div class="product-item">
-                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
-                        <span>Найкращий чайник, який треба придбати!</span>
-                            <div class="pokypka">
-                                <p>1 900 грн.</p>
-                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
-                            </div>
+                    <div class="category">
+                        <p>Побутова техніка</p>
+                        <ul class="subcategory">
+                            <li><a href="#">Мікрохвильові печі</a></li>
+                            <li><a href="#">Холодильники</a></li>
+                            <li><a href="#">Посудомийні машини</a></li>
+                            <li><a href="#">Чайники</a></li>
+                        </ul>
                     </div>
-                    <div class="product-item">
-                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
-                        <span>Найкращий чайник, який треба придбати!</span>
-                            <div class="pokypka">
-                                <p>1 900 грн.</p>
-                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
-                            </div>
+                    <div class="category">
+                        <p>Мобільна техніка</p>
+                        <ul class="subcategory">
+                            <li><a href="#">Смартфони</a></li>
+                            <li><a href="#">Планшети</a></li>
+                            <li><a href="#">Ноутбуки</a></li>
+                        </ul>
                     </div>
-                    <div class="product-item">
-                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
-                        <span>Найкращий чайник, який треба придбати!</span>
-                            <div class="pokypka">
-                                <p>1 900 грн.</p>
-                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
-                            </div>
+                    <div class="category">
+                        <p>Комп'ютери</p>
+                        <ul class="subcategory">
+                            <li><a href="#">Настільні комп'ютери</a></li>
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Монітори</a></li>
+                        </ul>
                     </div>
-                    <div class="product-item2">
-                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
-                        <span>Найкращий чайник, який треба придбати!</span>
-                            <div class="pokypka">
-                                <p>1 900 грн.</p>
-                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
-                            </div>
+                    <div class="category">
+                        <p>Одяг</p>
+                        <ul class="subcategory">
+                            <li><a href="#">Жіночий одяг</a></li>
+                            <li><a href="#">Чоловічий одяг</a></li>
+                            <li><a href="#">Дитячий одяг</a></li>
+                        </ul>
                     </div>
-                    <div class="product-item2">
-                        <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
-                        <span>Найкращий чайник, який треба придбати!</span>
-                            <div class="pokypka">
-                                <p>1 900 грн.</p>
-                                <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
-                            </div>
+                    <div class="category">
+                        <p>Нерухомість</p>
+                        <ul class="subcategory">
+                            <li><a href="#">Квартири</a></li>
+                            <li><a href="#">Будинки</a></li>
+                            <li><a href="#">Земельні ділянки</a></li>
+                        </ul>
                     </div>
+                </div>                    
+                
+                <div class="image-container">
+                    <img src="./image3/logo_price-list.jpg" alt="logo_price" class="fixed-image">
+                    <p>Прайс-лист</p>
                 </div>
             </div>
+
+            <div class="product-container">
+                <div class="product-item">
+                    <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                    <span>Найкращий чайник, який треба придбати!</span>
+                        <div class="pokypka">
+                            <p>1 900 грн.</p>
+                            <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                        </div>
+                </div>
+                <div class="product-item">
+                    <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                    <span>Найкращий чайник, який треба придбати!</span>
+                        <div class="pokypka">
+                            <p>1 900 грн.</p>
+                            <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                        </div>
+                </div>
+                <div class="product-item">
+                    <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                    <span>Найкращий чайник, який треба придбати!</span>
+                        <div class="pokypka">
+                            <p>1 900 грн.</p>
+                            <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                        </div>
+                </div>
+                <div class="product-item2">
+                    <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                    <span>Найкращий чайник, який треба придбати!</span>
+                        <div class="pokypka">
+                            <p>1 900 грн.</p>
+                            <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                        </div>
+                </div>
+                <div class="product-item2">
+                    <img src="./image3/nophoto.jpg" alt="nophoto" class="nophoto">
+                    <span>Найкращий чайник, який треба придбати!</span>
+                        <div class="pokypka">
+                            <p>1 900 грн.</p>
+                            <a href="#"><img src="./image3/icon_buy.svg" alt="icon_buy" class="icon_buy"></a>
+                        </div>
+                </div>
+            </div>        
         </div>
     </div>
     
     <div class="top-texto-container">
         <div class="texto-container">
-            <div class="texto-work-area">
-                <div class="mini-texto">
-                    <div class="pagination-container">
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">7</a>
+            <div class="mini-texto">
+                <div class="pagination-container">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                </div>
+                <div class="content-container">
+                    <div class="column">
+                        <p>Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у розробці більш як 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників, що працюють у двох офісах у Москві та Зеленограді. Характерні для цього жанру мотиви: нерозділеного кохання, догляду молодості, згасання душі.</p>
                     </div>
-                    <div class="content-container">
-                        <div class="column">
-                            <p>Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у розробці більш як 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників, що працюють у двох офісах у Москві та Зеленограді. Характерні для цього жанру мотиви: нерозділеного кохання, догляду молодості, згасання душі.</p>
-                        </div>
-                        <div class="column">
-                            <p>Одним із основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами за більш ніж 11 000 пошуковими запитами. При цьому в роботі основний акцент ми робимо на якості робіт, а також застосовуємо власні унікальні розробки в галузі SEO просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного спеціаліста, які переважно працюють у нашому московському офісі.</p>
-                        </div>
+                    <div class="column">
+                        <p>Одним із основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами за більш ніж 11 000 пошуковими запитами. При цьому в роботі основний акцент ми робимо на якості робіт, а також застосовуємо власні унікальні розробки в галузі SEO просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного спеціаліста, які переважно працюють у нашому московському офісі.</p>
                     </div>
                 </div>
-            </div>
+            </div>    
         </div>
     </div>
 
-        <div class="footer-container">
+        <footer class="footer-container">
             <div class="footero-container">
                 <div class="footer-work-area">
                     <div class="copyright-container">
@@ -271,6 +275,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
 </body>
 </html>

@@ -1,0 +1,107 @@
+
+/* Styles for the footer container */
+.footer-container {
+    width: 100%;
+    height: 220px; 
+    background-color: #777777;
+    
+}
+
+.footero-container {
+    width: 1280px; 
+    height: 220px;
+    background-color: #777777; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.footer-work-area {
+    width: 980px;
+    height: 100%; 
+    background-color: #777777;
+    margin: 0 auto; 
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Styles for container with copyright */
+.copyright-container {
+    width: 280px;
+    height: 100px; 
+    text-align: left;
+    background-color: #777777;
+ }
+
+ .copyright-container p {
+    margin: 0; 
+    font-size: 14px;
+    color: #ffffff;
+ }
+
+/* Styles for container with links */
+.links-container {
+    margin-left: 105px;
+    width: 150px;
+    text-align: left;
+}
+
+/* Styles for vertical link list */
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for link list items */
+.footer-links li {
+    margin-bottom: 8px; /* Відступ між пунктами списку */
+}
+
+.footer-links a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Styles for the company container */
+.company-logo-container {
+    width: 38px;
+    height: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Styles for company logo */
+.company-logo-small {
+    margin-left: 500px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Styles for the site development container */
+.development-container {
+    margin: 0; 
+    width: 170px;
+    height: 60px;
+    font-size: 14px;
+    color: white;
+    text-align: start;
+    margin-left: 250px;
+}
+
+.development-container p {
+    margin: 0; 
+    font-size: 14px;
+    color: #ffffff;
+    
+}
+
+/* Styles for the link in the site development container */
+.development-container a {
+    text-decoration: underline;
+    color: #ffffff; /* Колір тексту */
+}

@@ -1,0 +1,75 @@
+.top-container {
+    width: 100%;
+    height: 200px;
+    background-color: #d6d6d6; /* Gray color */
+}
+
+/* Styles for header container */
+.header-container {
+    width: 1280px; /* Container width */
+    height: 200px;
+    background-color: #d6d6d6; /* Gray color */
+    margin: 0 auto; /* Center on the screen */
+    display: flex;
+    justify-content: center; /* Center work area horizontally */
+    align-items: center; /* Center work area vertically */
+}
+
+.work-area {
+    width: 980px;
+    height: 100%; /* Height including top and bottom padding */
+    padding: 60px 10px; /* Top and bottom padding 60px, left and right padding 10px */
+    box-sizing: border-box; /* Includes padding in width and height */
+    display: flex;
+}
+
+/* Styles for the container with logo and company name */
+.company-container {
+    display: flex;
+    height: 100px; 
+    width: 400px;
+}
+
+/* Styles for the company logo */
+.company-logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px; /* Right margin of the image */
+}
+
+/* Styles for the company name */
+.company-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #777777; /* Text color */
+    display: block;
+}
+
+/* Styles for the company subtitle */
+.company-subtitle {
+    font-size: 15px;
+    color: #8b8989; /* Text color */
+    display: block;
+    margin-top: 10px; /* Reduce margin to bring it closer to the company name */
+}
+
+/* Styles for number container */
+.numbers-container {
+    height: 200px;
+    margin-left: 450px;
+    margin-top: -15px;
+    padding: 0;
+    padding-right: 10px;
+    text-align: right;
+}
+
+/* Styles for phone numbers */
+.phone-number {
+    font-size: 35px;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    color: #8b8989; /* Text color */
+    margin-top: 10px; /* Indent from top */
+    text-decoration: none; /* Remove underscore */
+
+}

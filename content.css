@@ -1,0 +1,248 @@
+/* Styles for news container */
+.top-news-container {
+    width: 100%;
+    height: 720px; 
+    background-color: #ffffff; 
+}
+
+.news-container {
+    width: 1280px; 
+    height: 720px; 
+    background-color: #ffffff; 
+    margin: 0 auto; /* Placement in the center of the screen */
+    display: flex;
+    padding-left: 15px;
+    justify-content: center; /* Centering the working area horizontally */
+    
+}
+
+.image-container {
+    width: 196px;
+    height: 130px;
+    background-color: #ffffff;
+}
+
+.image-container p {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: #444444;
+    margin-top: 85px;
+}
+
+.news-list-container {
+    width: 196px;
+    height: 280px;
+    box-sizing: border-box;
+    padding: 0px;
+
+}
+
+.news-list-container p {
+    font-size: 18px;
+    color: #777777;
+    padding-bottom: 6px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.news-list-container p:hover {
+    text-decoration: underline;
+}
+
+.subcategory {
+    display: none;
+    padding-left: 20px;
+}
+
+.subcategory li {
+    font-size: 14px;
+    color: #555555;
+    line-height: 24px;
+    margin: 0;
+    cursor: pointer;
+    position: relative; 
+    list-style-type: none;
+}
+
+.subcategory a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.subcategory li::before {
+    content: "•"; /* Add the symbol "•" */
+    position: absolute;
+    left: -10px; /* Adjust the distance between the marker and the text */
+}
+
+.subcategory li:hover {
+    text-decoration: underline;
+}
+
+
+.category:hover .subcategory {
+    display: block;
+}
+
+
+
+/* Styles for image container */
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px; /* Indentation between category list and image */
+}
+
+.fixed-image {
+    position: relative;
+    width: 80px;
+    height: 90px;
+}
+
+/* Styles for the goods container */
+.product-container {
+    padding-top: 5px;
+    width: 760px;
+    height: 720px;
+    background-color: #ffffff; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-wrap: wrap; /* Wrap the products in a new line */
+    row-gap: 10px; /* Distance between lines */
+}
+
+
+/* Styles for individual products */
+.product-item {
+    padding: 15px;
+    margin-left: 15px;
+    width: 233px;
+    height: 340px;
+    background-color: #dcdcdc;
+    box-sizing: border-box;
+}
+
+/* Styles for individual products */
+.product-item2 {
+    padding: 15px;
+    margin-left: 15px;
+    margin-top: -20px;
+    width: 233px;
+    height: 340px;
+    background-color: #dcdcdc;
+    box-sizing: border-box;
+}
+
+.product-item,
+.product-item2 span {
+    font-size: 16px;
+    color: #767676;
+}
+
+.product-item p {
+    font-size: 24px;
+    width: 120px;
+    color: #444444;
+    margin-top: 40px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.product-item2 p {
+    font-size: 24px;
+    width: 120px;
+    color: #444444;
+    margin-top: 40px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.pokypka {
+    display: flex;
+}
+
+.nophoto {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.icon_buy {
+    width: 30px;
+    height: 30px;
+    margin: 40px 0 0 45px;
+}
+
+
+/* Styles for news container */
+.top-texto-container {
+    width: 100%;
+    height: 540px; 
+    background-color: #ffffff; 
+}
+
+.texto-container {
+    width: 1280px; 
+    height: 540px; 
+    background-color: #ffffff; 
+    margin: 0 auto; /* Placement in the center of the screen */
+    display: flex;
+    justify-content: end; /* Centering the working area horizontally */
+    align-items: center; /* Centering the work area vertically */
+    padding-right: 170px;
+}
+
+.mini-texto {
+    width: 729px;
+    height: 100%; 
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.pagination-container {
+    width: 729px;
+    height: 30px;
+    display: flex;
+    align-items: flex-end; /* Bottom alignment */
+    justify-content: center;
+    background-color: #ffffff;
+    padding-top: 0;
+}
+
+.pagination-container a {
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin: 0 2px;
+    padding: 5px 10px;
+    display: inline-block; /* Add a block type to make the alignment work */
+}
+
+.pagination-container a:hover {
+    color: #333;
+}
+
+.pagination-container a:nth-child(3) {
+    font-size: 18px;
+    color: #444444;
+}
+
+.content-container {
+    border-top: 1px solid #767676;
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 350px; /* Width of each column */
+}
+
+.column p {
+    margin: 5px 0;
+    color: #767676;
+}

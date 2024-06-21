@@ -87,30 +87,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    var images = [
-        './image3/slide1.jpg',
-        './image3/slide2.jpg'
-    ];
+    var images = document.querySelectorAll('.slideshow img');
+    var totalImages = images.length;
+    var currentIndex = 1; // Start from the real first slide
+    var slideshow = document.querySelector('.slideshow');
+    var isAnimating = false;
 
-    var currentIndex = 0;
-    var slideshowImg = document.getElementById('slideshow');
+    // Initial positioning
+    slideshow.style.transform = `translateX(-1280px)`;
 
     function updateImage(index) {
-        slideshowImg.classList.add('hidden');
+        if (isAnimating) return;
+        isAnimating = true;
+        slideshow.style.transition = 'transform 0.5s ease';
+        slideshow.style.transform = `translateX(${-1280 * index}px)`;
+
         setTimeout(function() {
-            slideshowImg.src = images[index];
-            slideshowImg.classList.remove('hidden');
+            if (index === totalImages - 1) {
+                slideshow.style.transition = 'none';
+                slideshow.style.transform = `translateX(-1280px)`;
+                currentIndex = 1;
+            } else if (index === 0) {
+                slideshow.style.transition = 'none';
+                slideshow.style.transform = `translateX(${-1280 * (totalImages - 2)}px)`;
+                currentIndex = totalImages - 2;
+            } else {
+                currentIndex = index;
+            }
+            isAnimating = false;
         }, 500);
     }
 
     function showNextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        updateImage(currentIndex);
+        updateImage(currentIndex + 1);
     }
 
     function showPreviousImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        updateImage(currentIndex);
+        updateImage(currentIndex - 1);
     }
 
     var leftArrow = document.querySelector('.left-arrow');
@@ -119,6 +132,5 @@ document.addEventListener('DOMContentLoaded', function() {
     leftArrow.addEventListener('click', showPreviousImage);
     rightArrow.addEventListener('click', showNextImage);
 
-    // Start the slideshow function every 4 seconds
     setInterval(showNextImage, 4000);
 });
